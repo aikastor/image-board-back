@@ -42,9 +42,6 @@ module.exports = {
   async getItems() {
     return data;
   },
-  async getItemById(id) {
-    return data.find(item => item.id === id);
-  },
   async addItem(item) {
     item.id = nanoid();
     data.push(item);
